@@ -155,7 +155,7 @@
     	</div>
     	<div class="item">
     		<strong>Source Image: </strong><br><br>
-    		<img id="sourceImage">
+    		<img id="sourceImage"> <br>
     		<strong id="deskripsi"></strong>
     	</div>
     </content>
