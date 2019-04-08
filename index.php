@@ -3,7 +3,7 @@
 
 	$load_data = "SELECT * FROM daftar ORDER BY nama ASC";
 	$stmt = $conn->query($load_data);
-    $data = $stmt->fetchAll();
+    	$data = $stmt->fetchAll();
 ?>
 
 <html>
@@ -127,6 +127,7 @@
 				<td>Shift</td>
 				<td>Tanggal Daftar</td>
 			</tr>
+<<<<<<< HEAD
 			<?php 
 				$no = 1;
 				foreach($data as $mhs) 
@@ -148,5 +149,45 @@
 			?>
 		</table>
 	</content>
+=======
+		</table>
+	</form>
+	
+	<h2>Data Mahasiswa yang terdaftar</h2>
+	<table width='80%' border=0>
+		<tr bgcolor='#CCCCCC'>
+			<td>#</td>
+			<td>NIM</td>
+			<td>Nama</td>
+			<td>Jenis Kelamin</td>
+			<td>Alamat</td>
+			<td>Email</td>
+			<td>No. Telp</td>
+			<td>Status Kerja</td>
+			<td>Nama Perusahaan</td>
+			<td>Shift</td>
+			<td>Tanggal Daftar</td>
+		</tr>
+		<?php 
+			$no = 1;
+			foreach($data as $mhs) 
+			{ 		
+				echo "<tr>";
+				echo "<td>".$no++."</td>";
+				echo "<td>".$mhs['nim']."</td>";
+				echo "<td>".$mhs['nama']."</td>";
+				echo "<td>".$mhs['jenis_kelamin']."</td>";	
+				echo "<td>".$mhs['alamat']."</td>";	
+				echo "<td>".$mhs['email']."</td>";	
+				echo "<td>".$mhs['no_telp']."</td>";	
+				echo "<td>".$mhs['kerja']."</td>";	
+				echo "<td>".$mhs['nama_perusahaan']."</td>";	
+				echo "<td>".$mhs['shift']."</td>";
+				echo "<td>".$mhs['date']."</td>";
+				echo "</tr>";
+			}
+		?>
+	</table>
+>>>>>>> c940fbdf394258c2214ffa67b4a921ad66bcb6b9
 </body>
 </html>
