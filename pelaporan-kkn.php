@@ -26,7 +26,8 @@ if (isset($_POST["Submit"])) {
 // List blobs.
 $listBlobsOptions = new ListBlobsOptions();
 $listBlobsOptions->setPrefix("");
-// $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
+$result = $blobClient->listBlobs($containerName, $listBlobsOptions);
+dd($result);
 $no = 1;
 
 ?>
