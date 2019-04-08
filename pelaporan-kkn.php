@@ -116,18 +116,18 @@ $no = 1;
                 <th>Aksi</th>
             </tr>
             <?php
-                // do{
-                //     foreach ($result->getBlobs() as $blob)
-                //     {
-                //         echo "<tr>";
-                //         echo "<td>" . $no++ . "</td>"; 
-                //         echo "<td>" . $blob->getName() . "</td>";
-                //         echo "<td>" . $blob->getUrl() . "</td>"; 
-                //         echo "<td> <a href='comvis.php?url=" . $blob->getUrl() . "'> <input type='button' value='Analisa'> </td>";
-                //         echo "</tr>";
-                //     }
-                //     $listBlobsOptions->setContinuationToken($result->getContinuationToken());
-                // } while($result->getContinuationToken());
+                do{
+                    foreach ($result->getBlobs() as $blob)
+                    {
+                        echo "<tr>";
+                        echo "<td>" . $no++ . "</td>"; 
+                        echo "<td>" . $blob->getName() . "</td>";
+                        echo "<td>" . $blob->getUrl() . "</td>"; 
+                        echo "<td> <a href='comvis.php?url=" . $blob->getUrl() . "'> <input type='button' value='Analisa'> </td>";
+                        echo "</tr>";
+                    }
+                    $listBlobsOptions->setContinuationToken($result->getContinuationToken());
+                } while($result->getContinuationToken());
             ?>
         </table>
         
