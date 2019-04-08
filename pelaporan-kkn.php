@@ -8,7 +8,7 @@ use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
-$connectionString = "DefaultEndpointsProtocol=https;AccountName=kknunim;AccountKey=+kmiR7Moc3T7vbSR7Y6U93SfdeysdiKcIWBSQLQTDewpavvxStfRtd8j5tcNPvveYHyXyc9fZZZ+daIv8r/Mrg==;EndpointSuffix=core.windows.net;";
+$connectionString = "DefaultEndpointsProtocol=https;AccountName=kknunim;AccountKey=+kmiR7Moc3T7vbSR7Y6U93SfdeysdiKcIWBSQLQTDewpavvxStfRtd8j5tcNPvveYHyXyc9fZZZ+daIv8r/Mrg==;";
 
 // Create blob client.
 $containerName = "kkncontainer";
@@ -27,7 +27,6 @@ if (isset($_POST["Submit"])) {
 $listBlobsOptions = new ListBlobsOptions();
 $listBlobsOptions->setPrefix("");
 $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
-dd($result);
 $no = 1;
 
 ?>
