@@ -81,7 +81,7 @@
         <a href="https://kkn-unim.azurewebsites.net/pelaporan-kkn.php"><nav class="active">Pelaporan Kegiatan KKN</nav></a>
     </header>
 	<script type="text/javascript">
-	    function processImage() {
+	    $(document).ready(function () {
 	        // **********************************************
 	        // *** Update or verify the following values. ***
 	        // **********************************************
@@ -142,7 +142,7 @@
 	                jQuery.parseJSON(jqXHR.responseText).message;
 	            alert(errorString);
 	        });
-	    };
+	    });
 	</script>
 
     <content>
