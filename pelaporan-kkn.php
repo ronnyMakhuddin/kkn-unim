@@ -90,8 +90,8 @@ $no = 1;
 </head>
 <body>
     <header>
-        <a href="https://kkn-unim.azurewebsites.net/index.php"><nav class="active">Pendaftaran KKN</nav></a>
-        <a href="https://kkn-unim.azurewebsites.net/pelaporan-kkn.php"><nav>Pelaporan Kegiatan KKN</nav></a>
+        <a href="https://kkn-unim.azurewebsites.net/index.php"><nav>Pendaftaran KKN</nav></a>
+        <a href="https://kkn-unim.azurewebsites.net/pelaporan-kkn.php"><nav class="active">Pelaporan Kegiatan KKN</nav></a>
     </header>
     <content>
         <h1>Pelaporan Kegiatan KKN</h1>
